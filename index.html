@@ -25,7 +25,7 @@
                 <button type="submit"><i class="fa-thin fa-plus"></i></button>
             </div>
         </form>
-        <form id="edit-form">
+        <form id="edit-form" class="hide">
             <p>Editar tarefa atual.</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -33,20 +33,22 @@
             </div>
             <button id="cancel-btn">Cancelar</button>
         </form>
-        <div id="tolbar">
-            <h4>Encontrar tarefa</h4>
-            <form>
-                <input type="text" id="search-input" placeholder="Buscar">
-                <button id="erease-button"><i class="fa-solid fa-delete-left"></i></button>
-            </form>
-        </div>
-        <div id="filter">
-            <h4>Filtrar tarefas</h4>
-            <select id="filter-select">]
-                <option value="all">Todas</option>
-                <option value="done">Feitas</option>
-                <option value="all">A fazer</option>
-            </select>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Encontrar tarefa</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <button id="erease-button"><i class="fa-solid fa-delete-left"></i></button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar tarefas</h4>
+                <select id="filter-select">]
+                    <option value="all">Todas</option>
+                    <option value="done">Feitas</option>
+                    <option value="all">A fazer</option>
+                </select>
+            </div>
         </div>
         <div id="tudo-list">
             <div class="todo">
@@ -57,7 +59,7 @@
             </div>
         </div>
         <div id="tudo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>Tarefa de hoje</h3>
                 <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
                 <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
