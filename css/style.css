@@ -137,10 +137,41 @@ h3 {
 
 #filter {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     width: 35%;
 }
 
 #filter select {
     flex: 1;
+}
+
+/* todo list */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    transition: .3s;
+    border-bottom: 1px solid var(--white);
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: var(--deep-blue);
+
+}
+
+.done h3 {
+    color: var(--all-black);
+    text-decoration: line-through;
+    font-style: italic;
 }
