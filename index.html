@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/script.js" defer></script>
     <title>Lista de Atividades diaria</title>
 </head>
+
 <body>
-    
+    <main class="todo-conteiner">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form id="todo-form">
+            <p>Adicione sua tarfa;</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Qual a sua tarefa ?">
+                <button type="submit"><i class="fa-thin fa-plus"></i></button>
+            </div>
+        </form>
+        <form id="edit-form">
+            <p>Editar tarefa atual.</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit"><i class="fa-solid fa-check-double"></i></button>
+            </div>
+            <button id="cancel-btn">Cancelar</button>
+        </form>
+        <div id="tolbar">
+            <h4>Encontrar tarefa</h4>
+            <form>
+                <input type="text" id="search-input" placeholder="Buscar">
+                <button id="erease-button"><i class="fa-solid fa-delete-left"></i></button>
+            </form>
+        </div>
+        <div id="filter">
+            <h4>Filtrar tarefas</h4>
+            <select id="filter-select">]
+                <option value="all">Todas</option>
+                <option value="done">Feitas</option>
+                <option value="all">A fazer</option>
+            </select>
+        </div>
+        <div id="tudo-list">
+            <div class="todo">
+                <h3>Tarefa de hoje</h3>
+                <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
+                <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
+                <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div id="tudo-list">
+            <div class="todo">
+                <h3>Tarefa de hoje</h3>
+                <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
+                <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
+                <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
