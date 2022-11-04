@@ -75,3 +75,26 @@ h1, p, h4, h3 {
     text-align: center;
     padding: 0 1rem 1rem 0;
 }
+
+/* todo form */
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid var(--white);
+}
+
+#todo-form p, #edit-form p {
+    margin-bottom: .5rem;
+    font-weight:bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem;
+}
+
+#cancel-btn {
+    margin-top: 1rem;
+}
